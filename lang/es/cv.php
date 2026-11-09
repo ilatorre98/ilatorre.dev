@@ -70,10 +70,12 @@ return [
             ],
             [
                 'role' => 'Técnico en Sistemas Microinformáticos y Redes (prácticas)',
-                'company' => 'Institut El Calamot',
-                'location' => 'Gavà',
+                'company' => 'Escola Oficial d\'Idiomes de Viladecans',
+                'location' => 'Viladecans',
                 'period' => '2017 — 2018',
                 'description' => 'Mantenimiento de equipos, gestión de redes locales y soporte informático.',
+                'photo' => 'images/logo-eoi.jpg',
+                'photo_alt' => 'Logo EOI',
             ],
             [
                 'role' => 'Instructor de Artes Marciales',

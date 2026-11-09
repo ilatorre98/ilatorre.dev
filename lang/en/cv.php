@@ -70,10 +70,12 @@ return [
             ],
             [
                 'role' => 'Microcomputer Systems and Networks Technician (internship)',
-                'company' => 'Institut El Calamot',
-                'location' => 'Gavà',
+                'company' => 'Escola Oficial d\'Idiomes de Viladecans',
+                'location' => 'Viladecans',
                 'period' => '2017 — 2018',
                 'description' => 'Equipment maintenance, local network management and IT support.',
+                'photo' => 'images/logo-eoi.jpg',
+                'photo_alt' => 'Logo EOI',
             ],
             [
                 'role' => 'Martial Arts Instructor',
