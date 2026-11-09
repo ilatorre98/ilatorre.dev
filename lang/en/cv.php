@@ -45,32 +45,31 @@ return [
         'subtitle' => 'My career path, from technical support to leading development teams.',
         'items' => [
             [
-                'role' => 'Back-End Developer & Scrum Master',
                 'company' => 'Clickedu',
                 'location' => 'Barcelona',
-                'period' => '2024 — 2026',
-                'description' => 'Maintenance and development of the core platform (official documents and regulatory calculations, among others) and technical product definition. As Scrum Master, I managed the Compliance team, aligning criteria and ensuring agile deliveries.',
-            ],
-            [
-                'role' => 'Back-End Developer',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2021 — 2024',
-                'description' => 'Development of new features and bug fixing, specializing in the accounting module and critical official documentation (records, bulletins).',
-            ],
-            [
-                'role' => 'Quality Assurance (QA) & Support Technician',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2019 — 2021',
-                'description' => 'Auditing and validation of third-party code. Autonomous resolution of complex incidents under high pressure.',
-            ],
-            [
-                'role' => 'DUAL Internship Technician',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2018 — 2019',
-                'description' => 'Incident support and assimilation of the system architecture.',
+                'period' => '2018 — 2026',
+                'roles' => [
+                    [
+                        'role' => 'Back-End Developer & Scrum Master',
+                        'period' => '2024 — 2026',
+                        'description' => 'Maintenance and development of the core platform (official documents and regulatory calculations, among others) and technical product definition. As Scrum Master, I managed the Compliance team, aligning criteria and ensuring agile deliveries.',
+                    ],
+                    [
+                        'role' => 'Back-End Developer',
+                        'period' => '2021 — 2024',
+                        'description' => 'Development of new features and bug fixing, specializing in the accounting module and critical official documentation (records, bulletins).',
+                    ],
+                    [
+                        'role' => 'Quality Assurance (QA) & Support Technician',
+                        'period' => '2019 — 2021',
+                        'description' => 'Auditing and validation of third-party code. Autonomous resolution of complex incidents under high pressure.',
+                    ],
+                    [
+                        'role' => 'DUAL Internship Technician',
+                        'period' => '2018 — 2019',
+                        'description' => 'Incident support and assimilation of the system architecture.',
+                    ],
+                ],
             ],
             [
                 'role' => 'Microcomputer Systems and Networks Technician (internship)',

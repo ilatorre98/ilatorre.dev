@@ -45,32 +45,31 @@ return [
         'subtitle' => 'Mi trayectoria, desde el soporte técnico hasta el liderazgo de equipos de desarrollo.',
         'items' => [
             [
-                'role' => 'Desarrollador Back-End & Scrum Master',
                 'company' => 'Clickedu',
                 'location' => 'Barcelona',
-                'period' => '2024 — 2026',
-                'description' => 'Mantenimiento y desarrollo del core (documentos oficiales y cálculos normativos, entre otros) y definición técnica de producto. Como Scrum Master, gestioné el equipo de Compliance, unificando criterios y asegurando entregas ágiles.',
-            ],
-            [
-                'role' => 'Desarrollador Back-End',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2021 — 2024',
-                'description' => 'Desarrollo de nuevas funcionalidades y corrección de bugs, especializándome en el módulo de contabilidad y en documentación oficial crítica (expedientes, boletines).',
-            ],
-            [
-                'role' => 'Técnico de Calidad (QA) y Soporte',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2019 — 2021',
-                'description' => 'Auditoría y validación de código ajeno. Resolución autónoma de incidencias complejas bajo alta presión.',
-            ],
-            [
-                'role' => 'Técnico en Prácticas DUAL',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2018 — 2019',
-                'description' => 'Soporte en incidencias y asimilación de la arquitectura del sistema.',
+                'period' => '2018 — 2026',
+                'roles' => [
+                    [
+                        'role' => 'Desarrollador Back-End & Scrum Master',
+                        'period' => '2024 — 2026',
+                        'description' => 'Mantenimiento y desarrollo del core (documentos oficiales y cálculos normativos, entre otros) y definición técnica de producto. Como Scrum Master, gestioné el equipo de Compliance, unificando criterios y asegurando entregas ágiles.',
+                    ],
+                    [
+                        'role' => 'Desarrollador Back-End',
+                        'period' => '2021 — 2024',
+                        'description' => 'Desarrollo de nuevas funcionalidades y corrección de bugs, especializándome en el módulo de contabilidad y en documentación oficial crítica (expedientes, boletines).',
+                    ],
+                    [
+                        'role' => 'Técnico de Calidad (QA) y Soporte',
+                        'period' => '2019 — 2021',
+                        'description' => 'Auditoría y validación de código ajeno. Resolución autónoma de incidencias complejas bajo alta presión.',
+                    ],
+                    [
+                        'role' => 'Técnico en Prácticas DUAL',
+                        'period' => '2018 — 2019',
+                        'description' => 'Soporte en incidencias y asimilación de la arquitectura del sistema.',
+                    ],
+                ],
             ],
             [
                 'role' => 'Técnico en Sistemas Microinformáticos y Redes (prácticas)',

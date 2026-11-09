@@ -45,32 +45,31 @@ return [
         'subtitle' => 'La meva trajectòria, des del suport tècnic fins al lideratge d’equips de desenvolupament.',
         'items' => [
             [
-                'role' => 'Desenvolupador Back-End & Scrum Master',
                 'company' => 'Clickedu',
                 'location' => 'Barcelona',
-                'period' => '2024 — 2026',
-                'description' => 'Manteniment i desenvolupament del core (documents oficials i càlculs normatius, entre d’altres) i definició tècnica de producte. Com a Scrum Master, vaig gestionar l’equip de Compliance, unificant criteris i assegurant lliuraments àgils.',
-            ],
-            [
-                'role' => 'Desenvolupador Back-End',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2021 — 2024',
-                'description' => 'Desenvolupament de noves funcionalitats i correcció d’errors, especialitzant-me en el mòdul de comptabilitat i en documentació oficial crítica (expedients, butlletins).',
-            ],
-            [
-                'role' => 'Tècnic de Qualitat (QA) i Suport',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2019 — 2021',
-                'description' => 'Auditoria i validació de codi aliè. Resolució autònoma d’incidències complexes sota alta pressió.',
-            ],
-            [
-                'role' => 'Tècnic en Pràctiques DUAL',
-                'company' => 'Clickedu',
-                'location' => 'Barcelona',
-                'period' => '2018 — 2019',
-                'description' => 'Suport en incidències i assimilació de l’arquitectura del sistema.',
+                'period' => '2018 — 2026',
+                'roles' => [
+                    [
+                        'role' => 'Desenvolupador Back-End & Scrum Master',
+                        'period' => '2024 — 2026',
+                        'description' => 'Manteniment i desenvolupament del core (documents oficials i càlculs normatius, entre d’altres) i definició tècnica de producte. Com a Scrum Master, vaig gestionar l’equip de Compliance, unificant criteris i assegurant lliuraments àgils.',
+                    ],
+                    [
+                        'role' => 'Desenvolupador Back-End',
+                        'period' => '2021 — 2024',
+                        'description' => 'Desenvolupament de noves funcionalitats i correcció d’errors, especialitzant-me en el mòdul de comptabilitat i en documentació oficial crítica (expedients, butlletins).',
+                    ],
+                    [
+                        'role' => 'Tècnic de Qualitat (QA) i Suport',
+                        'period' => '2019 — 2021',
+                        'description' => 'Auditoria i validació de codi aliè. Resolució autònoma d’incidències complexes sota alta pressió.',
+                    ],
+                    [
+                        'role' => 'Tècnic en Pràctiques DUAL',
+                        'period' => '2018 — 2019',
+                        'description' => 'Suport en incidències i assimilació de l’arquitectura del sistema.',
+                    ],
+                ],
             ],
             [
                 'role' => 'Tècnic en Sistemes Microinformàtics i Xarxes (pràctiques)',
