@@ -32,6 +32,9 @@ class CvDownloadController extends Controller
             abort(Response::HTTP_NOT_FOUND, 'El CV solicitado no está disponible todavía.');
         }
 
-        return response()->download($path, "Iker-Latorre-CV-{$locale}.pdf");
+        return response()->download($path, "Iker-Latorre-CV-{$locale}.pdf", [
+            'Cache-Control' => 'no-store, no-cache, must-revalidate, max-age=0',
+            'Pragma' => 'no-cache',
+        ]);
     }
 }

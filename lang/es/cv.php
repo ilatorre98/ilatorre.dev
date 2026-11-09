@@ -32,7 +32,7 @@ return [
         'cta_contact' => 'Hablemos',
         'cta_experience' => 'Ver experiencia',
         'cta_download_cv' => 'Descargar CV',
-        'short_location' => 'Barcelona, España',
+        'short_location' => 'Barcelona',
     ],
 
     // Sección: Experiencia Profesional

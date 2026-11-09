@@ -32,7 +32,7 @@ return [
         'cta_contact' => 'Let’s talk',
         'cta_experience' => 'View experience',
         'cta_download_cv' => 'Download CV',
-        'short_location' => 'Barcelona, Spain',
+        'short_location' => 'Barcelona',
     ],
 
     // Section: Professional Experience

@@ -36,8 +36,7 @@ return [
     ],
 
     'github' => [
-        // TODO: actualizar con la URL real del repositorio una vez publicado.
-        'repo_url' => env('GITHUB_REPO_URL', 'https://github.com/iker-latorre/ilatorre.dev'),
+        'repo_url' => env('GITHUB_REPO_URL', 'https://github.com/ilatorre98/ilatorre.dev'),
     ],
 
 ];
