@@ -9,19 +9,19 @@
     ];
 @endphp
 
-<section id="stack" class="bg-charcoal-950 py-24">
+<section id="stack" class="bg-olive-100/50 py-24 dark:bg-charcoal-950">
     <div class="mx-auto max-w-5xl px-5 lg:px-8">
         <div class="mb-16 text-center" data-aos="fade-up">
-            <span class="text-xs font-semibold uppercase tracking-widest text-olive-400">{{ __('cv.nav.stack') }}</span>
-            <h2 class="mt-2 text-3xl font-bold text-charcoal-50 sm:text-4xl">{{ __('cv.behind_stack.title') }}</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-charcoal-400">{{ __('cv.behind_stack.subtitle') }}</p>
+            <span class="text-xs font-semibold uppercase tracking-widest text-olive-600 dark:text-olive-400">{{ __('cv.nav.stack') }}</span>
+            <h2 class="mt-2 text-3xl font-bold text-charcoal-900 sm:text-4xl dark:text-charcoal-50">{{ __('cv.behind_stack.title') }}</h2>
+            <p class="mx-auto mt-4 max-w-2xl text-charcoal-600 dark:text-charcoal-400">{{ __('cv.behind_stack.subtitle') }}</p>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @foreach (__('cv.behind_stack.items') as $index => $tech)
                 <div
                     x-data="{ open: false }"
-                    class="rounded-2xl border border-charcoal-700 bg-charcoal-800/50 p-5 transition hover:border-olive-600/60"
+                    class="rounded-2xl border border-olive-200 bg-white/70 p-5 transition hover:border-olive-500/60 dark:border-charcoal-700 dark:bg-charcoal-800/50 dark:hover:border-olive-600/60"
                     data-aos="fade-up"
                     data-aos-delay="{{ $index * 75 }}"
                 >
@@ -31,13 +31,13 @@
                         class="flex w-full items-center gap-3 text-left"
                         :aria-expanded="open"
                     >
-                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-400">
+                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-600 dark:text-olive-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $stackIcons[$index] ?? $stackIcons[0] }}" />
                             </svg>
                         </span>
-                        <span class="min-w-0 flex-1 text-sm font-bold text-charcoal-50">{{ $tech['name'] }}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 shrink-0 text-charcoal-400 transition" :class="open ? 'rotate-180' : ''">
+                        <span class="min-w-0 flex-1 text-sm font-bold text-charcoal-900 dark:text-charcoal-50">{{ $tech['name'] }}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 shrink-0 text-charcoal-500 transition dark:text-charcoal-400" :class="open ? 'rotate-180' : ''">
                             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -51,9 +51,9 @@
                         x-transition:leave="transition ease-in duration-100"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 -translate-y-1"
-                        class="mt-3 border-t border-charcoal-700/60 pt-3"
+                        class="mt-3 border-t border-olive-200/60 pt-3 dark:border-charcoal-700/60"
                     >
-                        <p class="text-sm leading-relaxed text-charcoal-400">{{ $tech['description'] }}</p>
+                        <p class="text-sm leading-relaxed text-charcoal-600 dark:text-charcoal-400">{{ $tech['description'] }}</p>
                     </div>
                 </div>
             @endforeach

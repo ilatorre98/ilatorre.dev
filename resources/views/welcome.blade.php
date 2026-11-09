@@ -35,8 +35,18 @@
     @fonts
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- Aplica el tema antes de pintar la página para evitar parpadeos (FOUC) --}}
+    <script>
+        (function () {
+            var theme = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            document.documentElement.classList.toggle('dark', theme === 'dark' || (!theme && prefersDark));
+        })();
+    </script>
 </head>
-<body class="bg-charcoal-900 text-charcoal-50 font-sans antialiased selection:bg-olive-500 selection:text-charcoal-950">
+<body class="text-charcoal-900 font-sans antialiased selection:bg-olive-500 selection:text-charcoal-950 dark:text-charcoal-50">
 
     @include('partials.navbar')
 

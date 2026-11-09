@@ -7,28 +7,28 @@
     ];
 @endphp
 
-<section id="skills" class="bg-charcoal-950 py-24">
+<section id="skills" class="bg-olive-100/50 py-24 dark:bg-charcoal-950">
     <div class="mx-auto max-w-6xl px-5 lg:px-8">
         <div class="mb-16 text-center" data-aos="fade-up">
-            <span class="text-xs font-semibold uppercase tracking-widest text-olive-400">{{ __('cv.nav.skills') }}</span>
-            <h2 class="mt-2 text-3xl font-bold text-charcoal-50 sm:text-4xl">{{ __('cv.skills.title') }}</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-charcoal-400">{{ __('cv.skills.subtitle') }}</p>
+            <span class="text-xs font-semibold uppercase tracking-widest text-olive-600 dark:text-olive-400">{{ __('cv.nav.skills') }}</span>
+            <h2 class="mt-2 text-3xl font-bold text-charcoal-900 sm:text-4xl dark:text-charcoal-50">{{ __('cv.skills.title') }}</h2>
+            <p class="mx-auto mt-4 max-w-2xl text-charcoal-600 dark:text-charcoal-400">{{ __('cv.skills.subtitle') }}</p>
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             @foreach (__('cv.skills.groups') as $index => $group)
                 <div
-                    class="group rounded-2xl border border-charcoal-800 bg-charcoal-900 p-6 transition hover:-translate-y-1 hover:border-olive-600/60 hover:shadow-xl hover:shadow-olive-900/20"
+                    class="group rounded-2xl border border-olive-200 bg-white/70 p-6 transition hover:-translate-y-1 hover:border-olive-500/60 hover:shadow-xl hover:shadow-olive-300/30 dark:border-charcoal-800 dark:bg-charcoal-900 dark:hover:border-olive-600/60 dark:hover:shadow-olive-900/20"
                     data-aos="fade-up"
                     data-aos-delay="{{ $index * 100 }}"
                 >
-                    <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-olive-500/10 text-olive-400 transition group-hover:bg-olive-500 group-hover:text-charcoal-950">
+                    <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-olive-500/10 text-olive-600 transition group-hover:bg-olive-500 group-hover:text-charcoal-950 dark:text-olive-400">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-6 w-6">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $icons[$index] ?? $icons[0] }}" />
                         </svg>
                     </div>
-                    <h3 class="text-base font-bold text-charcoal-50">{{ $group['title'] }}</h3>
-                    <p class="mt-2 text-sm leading-relaxed text-charcoal-400">{{ $group['description'] }}</p>
+                    <h3 class="text-base font-bold text-charcoal-900 dark:text-charcoal-50">{{ $group['title'] }}</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-charcoal-600 dark:text-charcoal-400">{{ $group['description'] }}</p>
                 </div>
             @endforeach
         </div>

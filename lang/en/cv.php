@@ -21,6 +21,10 @@ return [
     'ui' => [
         'select_language' => 'Language',
         'scroll_down' => 'Discover more',
+        'theme_light' => 'Light mode',
+        'theme_dark' => 'Dark mode',
+        'theme_system' => 'System',
+        'theme_toggle' => 'Toggle theme',
     ],
 
     // Header / Hero

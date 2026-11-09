@@ -28,16 +28,16 @@
     ];
 @endphp
 
-<section id="contact" class="relative overflow-hidden bg-charcoal-900 py-24">
+<section id="contact" class="relative overflow-hidden bg-white/50 py-24 dark:bg-charcoal-900/60">
     <div class="pointer-events-none absolute inset-0">
-        <div class="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-olive-600/10 blur-3xl"></div>
+        <div class="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-olive-400/20 blur-3xl dark:bg-olive-600/10"></div>
     </div>
 
     <div class="relative mx-auto max-w-4xl px-5 text-center lg:px-8">
         <div data-aos="fade-up">
-            <span class="text-xs font-semibold uppercase tracking-widest text-olive-400">{{ __('cv.nav.contact') }}</span>
-            <h2 class="mt-2 text-3xl font-bold text-charcoal-50 sm:text-4xl">{{ __('cv.contact.title') }}</h2>
-            <p class="mx-auto mt-4 max-w-xl text-charcoal-400">{{ __('cv.contact.subtitle') }}</p>
+            <span class="text-xs font-semibold uppercase tracking-widest text-olive-600 dark:text-olive-400">{{ __('cv.nav.contact') }}</span>
+            <h2 class="mt-2 text-3xl font-bold text-charcoal-900 sm:text-4xl dark:text-charcoal-50">{{ __('cv.contact.title') }}</h2>
+            <p class="mx-auto mt-4 max-w-xl text-charcoal-600 dark:text-charcoal-400">{{ __('cv.contact.subtitle') }}</p>
         </div>
 
         <div class="mt-12 grid gap-5 sm:grid-cols-2">
@@ -45,11 +45,11 @@
                 @if ($item['href'])
                     <a
                         href="{{ $item['href'] }}" target="_blank" rel="noopener"
-                        class="group flex items-center gap-4 rounded-2xl border border-charcoal-700 bg-charcoal-800/50 p-5 text-left transition hover:border-olive-600/60 hover:bg-charcoal-800"
+                        class="group flex items-center gap-4 rounded-2xl border border-olive-200 bg-white/70 p-5 text-left transition hover:border-olive-500/60 hover:bg-white dark:border-charcoal-700 dark:bg-charcoal-800/50 dark:hover:border-olive-600/60 dark:hover:bg-charcoal-800"
                         data-aos="fade-up"
                         data-aos-delay="{{ $index * 75 }}"
                     >
-                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-400 transition group-hover:bg-olive-500 group-hover:text-charcoal-950">
+                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-600 transition group-hover:bg-olive-500 group-hover:text-charcoal-950 dark:text-olive-400">
                             @if ($item['fill'] ?? false)
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
                                     <path d="{{ $item['icon'] }}" />
@@ -62,23 +62,23 @@
                         </span>
                         <span class="min-w-0">
                             <span class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">{{ $item['label'] }}</span>
-                            <span class="block truncate text-sm font-medium text-charcoal-50">{{ $item['value'] }}</span>
+                            <span class="block truncate text-sm font-medium text-charcoal-900 dark:text-charcoal-50">{{ $item['value'] }}</span>
                         </span>
                     </a>
                 @else
                     <div
-                        class="group flex items-center gap-4 rounded-2xl border border-charcoal-700 bg-charcoal-800/50 p-5 text-left transition hover:border-olive-600/60 hover:bg-charcoal-800"
+                        class="group flex items-center gap-4 rounded-2xl border border-olive-200 bg-white/70 p-5 text-left transition hover:border-olive-500/60 hover:bg-white dark:border-charcoal-700 dark:bg-charcoal-800/50 dark:hover:border-olive-600/60 dark:hover:bg-charcoal-800"
                         data-aos="fade-up"
                         data-aos-delay="{{ $index * 75 }}"
                     >
-                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-400 transition group-hover:bg-olive-500 group-hover:text-charcoal-950">
+                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-olive-500/10 text-olive-600 transition group-hover:bg-olive-500 group-hover:text-charcoal-950 dark:text-olive-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $item['icon'] }}" />
                             </svg>
                         </span>
                         <span class="min-w-0">
                             <span class="block text-xs font-semibold uppercase tracking-wide text-charcoal-500">{{ $item['label'] }}</span>
-                            <span class="block truncate text-sm font-medium text-charcoal-50">{{ $item['value'] }}</span>
+                            <span class="block truncate text-sm font-medium text-charcoal-900 dark:text-charcoal-50">{{ $item['value'] }}</span>
                         </span>
                     </div>
                 @endif

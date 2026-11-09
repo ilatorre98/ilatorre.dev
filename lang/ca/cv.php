@@ -21,6 +21,10 @@ return [
     'ui' => [
         'select_language' => 'Idioma',
         'scroll_down' => 'Descobreix-ne més',
+        'theme_light' => 'Mode clar',
+        'theme_dark' => 'Mode fosc',
+        'theme_system' => 'Sistema',
+        'theme_toggle' => 'Canviar tema',
     ],
 
     // Capçalera / Hero

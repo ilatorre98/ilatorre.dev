@@ -21,6 +21,10 @@ return [
     'ui' => [
         'select_language' => 'Idioma',
         'scroll_down' => 'Descubre más',
+        'theme_light' => 'Modo claro',
+        'theme_dark' => 'Modo oscuro',
+        'theme_system' => 'Sistema',
+        'theme_toggle' => 'Cambiar tema',
     ],
 
     // Cabecera / Hero
